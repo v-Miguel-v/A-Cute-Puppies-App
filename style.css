@@ -1,0 +1,196 @@
+:root {
+	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.global-container {
+	padding: 10px;
+	background-color: #008adf;
+}
+
+.header {
+	padding: 13px 10px;
+}
+
+.header__logo-container {
+	height: 32vw;
+	text-align: center;
+	border: #21cbef solid;
+	background-color: #93f0ff;
+	border-radius: 10% 10% 50% 50% / 30% 30% 50% 50%;
+	max-height: 300px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.header__logo {
+	width: 90%;
+	margin-top: 10px;
+}
+
+.main-section {
+	margin: 10px auto;
+	padding: 5px 0;
+	text-align: center;	
+	border-radius: 7%;
+	border: #21cbef solid;
+	margin-bottom: 50px;
+	max-width: 1000px;
+}
+
+.main-section--margin-bottom-15 {
+	margin-bottom: 15px;
+}
+
+.main-section--fit-content-width {
+	width: fit-content;
+	margin: 50px auto;
+	padding: 5px 30px;
+}
+
+.main-section__title {
+	color: #fff;
+	font-size: 10vw;
+	font-weight: bold;
+	font-family: "Edu SA Beginner", cursive;
+	margin-bottom: 10px;
+}
+
+.main-section__img {
+	padding: 10px;
+	max-width: 92%;
+	max-height: 300px;
+}
+
+.normal-button {
+	color: white;
+	background: none;
+	border-style: dashed;
+	padding: 5px 15px;
+	border-radius: 0;
+	font-size: 4vw;
+	font-weight: lighter;
+	font-family: "Source Sans Pro", sans-serif;	
+}
+
+.normal-button:hover {
+	cursor: pointer;
+	background-color: #1faaff;
+	box-shadow: 0px 1px 2px 0 rgba(66,133,244,0.3), 0px 1px 3px 1px rgba(66,133,244,0.15);
+}
+
+.normal-button--margin-right-10 {
+	margin-right: 10px;
+}
+
+.normal-button--margin-left-10 {
+	margin-left: 10px;
+}
+
+.saved-puppy__container {
+	margin: 10px;
+	position: relative;
+	display: inline-block;
+}
+
+.saved-puppy__img {
+	max-height: 300px;
+	max-width: 80vw;
+}
+
+.saved-puppy__delete-button {
+	top: -8px;
+	right: -5px;
+	position: absolute;
+	
+	border: 0;
+	width: fit-content;
+	height: 14px;
+	line-height: 0px;
+	background: none;
+	
+	color: #f00;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.saved-puppy__delete-button:hover {
+	top: -10px;
+	right: -8px;
+	height: 21px;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.upload-file-form__input-file {
+	display: none;
+}
+
+.upload-file-form__styling {
+	display: block;
+	width: 56vw;
+	height: 10vw;
+	padding-top: 5px;
+	margin: 17px auto;
+	margin-bottom: 15px;
+	color: #008adf;
+	cursor: pointer;
+	font-size: 5vw;
+	font-weight: bold;
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: #21cbef;	
+	border-radius: 10% 10% 10% 10% / 40% 40% 40% 40%;
+}
+
+/*
+
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+
+@media (min-width: 660px) {
+	.main-section--maxsize2 {
+		max-width: 500px;
+	}
+	
+	.upload-file-form__styling {
+		max-width: 370px;
+		max-height: 66px;
+		font-size: 3.5rem;
+	}
+	
+}
+
+@media (min-width: 680px) {
+	.main-section--maxsize1 {
+		max-width: 650px;
+		margin: 50px auto;
+	}
+	
+	.main-section__title {
+		font-size: 7rem;
+	}
+	
+	.normal-button {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.global-container {
+		background-size: 100vw;
+		background-repeat: repeat-y;
+		background-image: url(./assets/cloudsborder.png);
+	}
+}
