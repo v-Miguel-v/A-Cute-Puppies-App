@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <title>A Cute Puppies App</title>
+        <link rel="shortcut icon" type="image/png" href="#"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+	<body class="global-container">
+	
+		<header class="header">
+			<div class="header__logo-container">
+				<img class="header__logo" src="./assets/logo(2).svg" alt="A Cute Puppies App"/>
+			</div>
+		</header>
+		
+		<main class="main">
+			<section class="main-section main-section--maxsize1">
+				<h2 class="main-section__title">Random Puppy</h2>
+					<img id="random-puppy-img" class="main-section__img" alt="A cute puppy image"/>
+				<div class="buttons-container">
+					<button id="load-puppy-btn" class="normal-button normal-button--margin-right-10">
+						<p>Load Another</p>
+						<p>Puppy</p>
+					</button>
+					<button id="save-puppy-btn" class="normal-button normal-button--margin-left-10">
+						<p>Save as</p>
+						<p>Favourite</p>
+					</button>
+				</div>
+			</section>
+
+			<section id="favourite-content" class="main-section">
+				<h2 class="main-section__title">Favourite Puppies</h2>
+			</section>
+
+			<section class="main-section main-section--fit-content-width main-section--maxsize2">
+				<form class="upload-file-form">
+						<legend	class="upload-file-form__title-container">
+							<h2 class="upload-file-form__title main-section__title">Upload a puppy</h2>
+						</legend>
+						<label for="file" class="upload-file-form__styling">
+							<input id="file" class="upload-file-form__input-file" name="file" type="file" accept="image/*"/>
+							Choose a puppy 🐶
+						</label>
+						<button class="upload-file-form__button normal-button" type="button" onclick="uploadPuppyImage()"> Send Puppy</button>
+				</form>
+			</section>
+			
+			<section id="uploaded-content" class="main-section main-section--margin-bottom-15">
+				<h2 class="main-section__title">Uploaded Puppies</h2>
+			</section>
+		</main>
+		
+		<footer class="footer"></footer>
+		<script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
