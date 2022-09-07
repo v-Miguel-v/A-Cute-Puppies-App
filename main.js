@@ -27,7 +27,7 @@ async function loadRandomPuppyImage() {
 		console.groupEnd();
 		
 	} catch (error) {		
-		console.group("Error");
+		console.group("Error (GET Random Puppy)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el GET de la imagen aleatoria.");
@@ -67,7 +67,7 @@ async function loadFavouritePuppies() {
 		console.groupEnd();
 		
 	} catch (error) {	
-		console.group("Error");
+		console.group("Error (GET Fav Puppies)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el GET para cargar los Favoritos.");
@@ -106,7 +106,7 @@ async function loadUploadedPuppies() {
 		console.groupEnd();
 		
 	} catch (error) {		
-		console.group("Error");
+		console.group("Error (GET Uploaded Puppies)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el GET para cargar los Favoritos.");
@@ -137,7 +137,7 @@ async function saveAsFavouritePuppy() {
 		console.groupEnd();
 		
 	} catch (error) {	
-		console.group("Error");
+		console.group("Error (POST Save as Fav)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el POST de los Favoritos.");
@@ -169,7 +169,7 @@ async function updateFavouritePuppies() {
 		console.groupEnd();
 		
 	} catch (error) {		
-		console.group("Error");
+		console.group("Error (GET Update Favs)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el GET para actualizar los Favoritos.");
@@ -209,7 +209,7 @@ async function deletePuppyFromFavourites(puppyId){
 		console.groupEnd();
 		
 	} catch (error) {		
-		console.group("Error");
+		console.group("Error (DELETE from Favs)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el DELETE de los Favoritos.");
@@ -266,7 +266,7 @@ async function uploadPuppyImage() {
 		console.groupEnd();
 		
 	} catch (error) {		
-		console.group("Error");
+		console.group("Error (POST Upload Puppy)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el POST al subir la imagen.");
@@ -298,7 +298,7 @@ async function updateUploadedPuppies() {
 		console.groupEnd();
 		
 	} catch (error) {		
-		console.group("Error");
+		console.group("Error (GET Update Uploads)");
 			console.error(error);
 		console.groupEnd();
 		alert("Ocurrió un Error en el GET para actualizar las Updates.");
@@ -334,7 +334,7 @@ async function deletePuppyFromUploads(puppyId){
 		console.groupEnd();
 		
 	} catch (error) {
-		console.group("Error");
+		console.group("Error (DELETE from Uploads)");
 			console.error(error);
 		console.groupEnd();
 		
